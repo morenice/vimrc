@@ -27,9 +27,11 @@ Configuration
 * ctrlp
 * taglist
 * python-mode
+* snipMate
 
 
 # See also
 
 * https://github.com/VundleVim/Vundle.vim
+* http://vimawesome.com/
 

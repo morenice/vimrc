@@ -76,6 +76,7 @@ Plugin 'tomasr/molokai'
 Plugin 'The-NERD-Tree'
 Plugin 'ctrlp.vim'
 Plugin 'taglist.vim'
+Plugin 'snipMate'
 
 Plugin 'klen/python-mode'
 

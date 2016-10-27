@@ -8,11 +8,15 @@ First, install vim-nox for vim pymode
 
 `$ sudo apt-get install vim-nox`
 
+install ctags for taglist vim plug-in
+
+`$ sudo apt-get install ctags`
+
 Set up Vundle.vim
 
 `$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
-Configuration
+Clone vimrc and configuration
 
 `$ cp vimrc ~/.vimrc`
 

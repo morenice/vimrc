@@ -1,5 +1,5 @@
 # vimrc
-vim essential configuration fo c, c++ and python development
+vim essential configuration for c, c++ and python development
 
 
 # configure guide
@@ -16,7 +16,7 @@ Set up Vundle.vim
 
 `$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
-Clone vimrc and configuration
+Clone vimrc and copy
 
 `$ cp vimrc ~/.vimrc`
 
@@ -32,6 +32,7 @@ Clone vimrc and configuration
 * taglist
 * python-mode
 * snipMate
+* ...
 
 
 # See also

@@ -64,9 +64,7 @@ Plugin 'taglist.vim'
 Plugin 'The-NERD-Tree'
 Plugin 'snipMate'
 Plugin 'ctrlp.vim'
-
-" for python coding
-Plugin 'klen/python-mode'
+Plugin 'airblade/vim-gitgutter'
 
 " for writing
 Plugin 'junegunn/goyo.vim'
@@ -104,18 +102,6 @@ colorscheme molokai
 let Tlist_Auto_Open=1
 let Tlist_Use_Right_Window=1
 let Tlist_Exit_OnlyWindow=1
-
-" pymode configure
-let g:pymode = 1
-let g:pymode_indent = 1
-let g:pymode_doc = 1
-let g:pymode_doc_bind = 'K'
-let g:pymode_virtualenv = 1
-let g:pymode_breakpoint = 1
-let g:pymode_rope_completion = 1
-let g:pymode_rope_complete_on_dot = 1
-let g:pymode_syntax_all = 1
-let g:pymode_folding = 0
 
 
 "" Register Key map

@@ -59,11 +59,17 @@ Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'tomasr/molokai'
 
-" common develop plugin
+"" common develop plugin
+"
 Plugin 'taglist.vim'
+
+"" tip of find header
+"$ ctags --extra=+f -R .
+"Then in vim, you can just type :tag header.h to jump to header.h
+"Use with ctrlp.vim
+Plugin 'ctrlp.vim'
 Plugin 'The-NERD-Tree'
 Plugin 'snipMate'
-Plugin 'ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 
 " for writing

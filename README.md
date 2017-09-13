@@ -1,26 +1,28 @@
 # vimrc
-vim essential configuration for c, c++ and python development
+vim essential configuration
+* c/c++ development
+* python development
+* php development
 
 
 # configure guide
 
-First, install vim-nox for vim pymode
-
-`$ sudo apt-get install vim-nox`
-
-install ctags for taglist vim plug-in
+Install ctags
 
 `$ sudo apt-get install ctags`
 
-Set up Vundle.vim
+Set up vim-plug
 
-`$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+```sh
+$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
 
-Clone vimrc and copy
+Clone vimrc
 
 `$ cp vimrc ~/.vimrc`
 
-`vim` and run `:PluginInstall`
+`vim` and run `:PlugInstall`
 
 
 # vim plug-in list
@@ -28,15 +30,14 @@ Clone vimrc and copy
 * vim-airline
 * molokai theme
 * NERD-Tree
+* tagbar
 * ctrlp
-* taglist
-* python-mode
 * snipMate
+* php
 * ...
 
 
 # See also
 
-* https://github.com/VundleVim/Vundle.vim
+* https://github.com/junegunn/vim-plug
 * http://vimawesome.com/
-

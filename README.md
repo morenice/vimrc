@@ -7,9 +7,9 @@ vim essential configuration
 
 # configure guide
 
-Install ctags
+Install ctags, tmux
 
-`$ sudo apt-get install ctags`
+`$ sudo apt-get install ctags tmux`
 
 Set up vim-plug
 
@@ -31,6 +31,7 @@ Clone vimrc
 * molokai theme
 * NERD-Tree
 * tagbar
+* vim-gitgutter
 * ctrlp
 * snipMate
 * php

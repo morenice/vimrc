@@ -25,12 +25,14 @@ autocmd FileType php set tabstop=4|set shiftwidth=4|set expandtab
 
 " Vim Plug configure
 call plug#begin('~/.vim/plugged')
+
+" common develop plugin
 Plug 'bling/vim-airline'
 Plug 'flazz/vim-colorschemes'
 Plug 'tomasr/molokai'
-
-" common develop plugin
 Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
+Plug 'airblade/vim-gitgutter'
+Plug 'benmills/vimux'
 
 "" tip of find header
 "$ ctags --extra=+f -R .

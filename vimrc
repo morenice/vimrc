@@ -47,6 +47,9 @@ Plug 'stanangeloff/php.vim'
 
 " python
 
+"yml
+Plug 'henrik/vim-yaml-flattener'
+
 " for writing
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'

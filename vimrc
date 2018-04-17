@@ -20,8 +20,7 @@ set bg=dark
 
 syntax on
 autocmd! BufWrite * mark ' | silent! %s/\s\+$// | norm ''
-autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
-autocmd FileType php set tabstop=4|set shiftwidth=4|set expandtab
+"autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 
 " Vim Plug configure
 call plug#begin('~/.vim/plugged')
@@ -42,15 +41,18 @@ Plug 'kien/ctrlp.vim'
 Plug 'msanders/snipmate.vim'
 Plug 'majutsushi/tagbar'
 
-" php
-Plug 'stanangeloff/php.vim'
 
-" python
+" programming language
+Plug 'pangloss/vim-javascript'
+Plug 'othree/javascript-libraries-syntax.vim'
 
-"yml
+
+" tools
+Plug 'pearofducks/ansible-vim'
 Plug 'henrik/vim-yaml-flattener'
+Plug 'ekalinin/dockerfile.vim'
 
-" for writing
+" writing
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'reedes/vim-pencil'
@@ -72,14 +74,3 @@ autocmd VimEnter * nested :TagbarOpen
 "" Register Key map
 "
 map <F10> :Goyo <bar> :Limelight!! <bar> :TogglePencil <CR>
-
-"" PHP
-function! PhpSyntaxOverride()
-  hi! def link phpDocTags  phpDefine
-  hi! def link phpDocParam phpType
-endfunction
-
-augroup phpSyntaxOverride
-  autocmd!
-  autocmd FileType php call PhpSyntaxOverride()
-augroup END

@@ -49,7 +49,6 @@ Plug 'othree/javascript-libraries-syntax.vim'
 
 " tools
 Plug 'pearofducks/ansible-vim'
-Plug 'henrik/vim-yaml-flattener'
 Plug 'ekalinin/dockerfile.vim'
 
 " writing
@@ -62,7 +61,6 @@ call plug#end()
 " plugin airline configure
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
-"let g:airline_theme='molokai'
 
 " vim color schema
 colorscheme molokai

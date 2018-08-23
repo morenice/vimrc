@@ -20,7 +20,8 @@ set bg=dark
 
 syntax on
 autocmd! BufWrite * mark ' | silent! %s/\s\+$// | norm ''
-"autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
+autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
+autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
 
 " Vim Plug configure
 call plug#begin('~/.vim/plugged')
@@ -45,7 +46,7 @@ Plug 'majutsushi/tagbar'
 " programming language
 Plug 'pangloss/vim-javascript'
 Plug 'othree/javascript-libraries-syntax.vim'
-
+Plug 'klen/python-mode'
 
 " tools
 Plug 'pearofducks/ansible-vim'
@@ -67,6 +68,7 @@ colorscheme molokai
 
 " tagbar configure
 "let g:tagbar_autoclose = 1
+"let g:tagbar_autofocus = 1
 autocmd VimEnter * nested :TagbarOpen
 
 "" Register Key map

@@ -20,8 +20,12 @@ set bg=dark
 
 syntax on
 autocmd! BufWrite * mark ' | silent! %s/\s\+$// | norm ''
+autocmd FileType cpp set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
-autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType html set tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType css set tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType json set tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType yaml set tabstop=2|set shiftwidth=2|set expandtab
 
 " Vim Plug configure
 call plug#begin('~/.vim/plugged')
@@ -33,24 +37,26 @@ Plug 'tomasr/molokai'
 Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'airblade/vim-gitgutter'
 Plug 'benmills/vimux'
-
 "" tip of find header
 "$ ctags --extra=+f -R .
 "Then in vim, you can just type :tag header.h to jump to header.h
 "Use with ctrlp.vim
 Plug 'kien/ctrlp.vim'
-Plug 'msanders/snipmate.vim'
-Plug 'majutsushi/tagbar'
 
 
 " programming language
+Plug 'msanders/snipmate.vim'
+Plug 'davidhalter/jedi-vim'     " autocomplete
+Plug 'w0rp/ale'                 " linting
 Plug 'pangloss/vim-javascript'
 Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'klen/python-mode'
+Plug 'majutsushi/tagbar'
 
-" tools
+
+" devops
 Plug 'pearofducks/ansible-vim'
 Plug 'ekalinin/dockerfile.vim'
+
 
 " writing
 Plug 'junegunn/goyo.vim'
@@ -73,4 +79,5 @@ autocmd VimEnter * nested :TagbarOpen
 
 "" Register Key map
 "
+map <F8> :NERDTreeFind <CR>
 map <F10> :Goyo <bar> :Limelight!! <bar> :TogglePencil <CR>

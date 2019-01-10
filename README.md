@@ -2,11 +2,10 @@
 vim essential configuration
 * c/c++ development
 * python development
-* php development
+* web development
 
 
 # configure guide
-
 Install ctags, tmux
 
 `$ sudo apt-get install ctags tmux`
@@ -25,20 +24,6 @@ Clone vimrc
 `vim` and run `:PlugInstall`
 
 
-# vim plug-in list
-
-* vim-airline
-* molokai theme
-* NERD-Tree
-* tagbar
-* vim-gitgutter
-* ctrlp
-* snipMate
-* php
-* ...
-
-
 # See also
-
 * https://github.com/junegunn/vim-plug
 * http://vimawesome.com/

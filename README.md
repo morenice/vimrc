@@ -8,18 +8,15 @@ vim essential configuration
 # configure guide
 Install ctags, tmux
 
-`$ sudo apt-get install ctags tmux`
+linux
+```$ sudo apt-get install ctags tmux```
 
-Set up vim-plug
+macOS
+```$ brew install ctags tmux```
 
-```sh
-$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
+Copy vimrc
 
-Clone vimrc
-
-`$ cp vimrc ~/.vimrc`
+```$ cp vimrc ~/.vimrc```
 
 `vim` and run `:PlugInstall`
 

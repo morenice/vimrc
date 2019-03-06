@@ -18,8 +18,22 @@ set encoding=utf-8
 set fileencodings=utf-8,euc-kr
 set bg=dark
 
+let vimplug_exists=expand('~/.vim/autoload/plug.vim')
+
+if !filereadable(vimplug_exists)
+  if !executable("curl")
+    echoerr "You have to install curl or first install vim-plug yourself!"
+    execute "q!"
+  endif
+  echo "Installing Vim-Plug..."
+  echo ""
+  silent !\curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall
+endif
+
 syntax on
 autocmd! BufWrite * mark ' | silent! %s/\s\+$// | norm ''
+autocmd FileType c set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType cpp set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType html set tabstop=2|set shiftwidth=2|set expandtab

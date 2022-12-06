@@ -66,6 +66,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'majutsushi/tagbar'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'nvie/vim-flake8'
 
 
 " devops

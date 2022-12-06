@@ -36,6 +36,7 @@ autocmd! BufWrite * mark ' | silent! %s/\s\+$// | norm ''
 autocmd FileType c set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType cpp set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
+autocmd FileType go set tabstop=4
 autocmd FileType html set tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType css set tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType json set tabstop=2|set shiftwidth=2|set expandtab
@@ -60,11 +61,11 @@ Plug 'kien/ctrlp.vim'
 
 " programming language
 Plug 'msanders/snipmate.vim'
-Plug 'davidhalter/jedi-vim'     " autocomplete
 Plug 'w0rp/ale'                 " linting
 Plug 'pangloss/vim-javascript'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'majutsushi/tagbar'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 
 " devops
